@@ -13,6 +13,7 @@ html {
 body {
     font-size: 1.6rem;
     font-family: Poppins;
+    height: 2000px;
 }
 
 /* Common */
@@ -96,10 +97,6 @@ a {
 
 /* Hero */
 
-.hero {
-    /* position: relative; */
-}
-
 .hero .info {
     width: 51%;
     margin-top: 130px;
@@ -138,4 +135,49 @@ a {
     position: absolute;
     bottom: 0;
     right: calc((100vw - 1110px) / 2 - 100px);
+}
+
+/* Clients */
+.clients .row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.clients .row:first-child {
+    margin-top: 122px;
+}
+
+.clients .row:nth-child(2) {
+    margin-top: 23px;
+}
+
+.clients .row:last-child {
+    margin-top: 70px;
+    align-items: center;
+}
+
+.clients .logo {
+    height: 24px;
+}
+
+.clients .star {
+    height: 19px;
+}
+
+.clients .desc {
+    font-weight: 500;
+    font-size: 1.6rem;
+    line-height: 1.25;
+    color: #7d8589;
+}
+
+.clients .client {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 204px;
+    height: 91px;
+    background: #ffffff;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
 }
