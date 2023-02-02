@@ -181,3 +181,89 @@ a {
     box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
     border-radius: 12px;
 }
+
+/* Guides */
+.guides .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 140px;
+}
+
+.guides .title {
+    position: relative;
+}
+
+.guides .title h2 {
+    font-weight: 600;
+    font-size: 3.5rem;
+    line-height: 1;
+    color: #000339;
+}
+
+.guides .title h2::before {
+    position: absolute;
+    top: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    content: "";
+    display: block;
+    width: 42px;
+    height: 4px;
+    background: #000339;
+    border-radius: 12px;
+}
+
+.guides .desc {
+    max-width: 42%;
+    margin-top: 20px;
+}
+
+.guides .desc p {
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 1.8;
+    text-align: center;
+    color: #5a6473;
+}
+
+.guides .action {
+    margin-top: 70px;
+    display: flex;
+    justify-content: space-between;
+    width: 62%;
+}
+
+.guides .action .item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.guides .action .item .icon {
+    width: 48px;
+    height: 48px;
+}
+
+.guides .action .item h3 {
+    margin-top: 23px;
+    font-weight: 500;
+    font-size: 2rem;
+    line-height: 1.1;
+    text-align: center;
+    color: #3b3c45;
+}
+
+.guides .action .item .link {
+    margin-top: 10px;
+}
+.guides .action .item .link span {
+    font-weight: 600;
+    font-size: 1.4rem;
+    color: #0689ff;
+}
+
+.guides .btn {
+    margin-top: 50px;
+    min-width: 170px;
+}
