@@ -174,8 +174,9 @@ header.header {
 }
 
 /* Clients */
-.clients .row:first-child {
-    margin-top: 122px;
+.clients {
+    padding: 42px 0px;
+    margin-top: 40px;
 }
 
 .clients .row:nth-child(2) {
@@ -214,11 +215,15 @@ header.header {
 }
 
 /* Guides */
+.guides {
+    padding: 95px;
+    margin-top: 40px;
+}
+
 .guides .content {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 140px;
 }
 
 .guides .title {
@@ -293,8 +298,9 @@ header.header {
     margin-top: 50px;
 }
 
+/* Features */
 .features {
-    margin-top: 136px;
+    margin-top: 40px;
     background: #f5fafe;
     padding: 110px 0;
 }
@@ -331,12 +337,13 @@ header.header {
     border-radius: 12px;
     flex: 1;
     background: #ffffff;
+    overflow: hidden;
 }
 
 .product .thumb {
     width: 100%;
     height: 227px;
-    border-radius: 12px 12px 0 0;
+    /* border-radius: 12px 12px 0 0; */
 }
 
 .product .info {
