@@ -51,8 +51,32 @@ a {
 .btn:hover {
     opacity: 0.9;
 }
+
+.row-space-between {
+    display: flex;
+    justify-content: space-between;
+}
+
+.link {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.link span {
+    font-weight: 600;
+    font-size: 2.4rem;
+    color: #0689ff;
+}
+
+.link img {
+    width: 24px;
+    height: 8px;
+    object-fit: cover;
+}
+
 /* Header */
-.header {
+header.header {
     height: 100vh;
     background-color: #e6f0ff;
     position: relative;
@@ -145,8 +169,8 @@ a {
 
 /* Clients */
 .clients .row {
-    display: flex;
-    justify-content: space-between;
+    /* display: flex;
+    justify-content: space-between; */
 }
 
 .clients .row:first-child {
@@ -263,12 +287,89 @@ a {
 .guides .action .item .link {
     margin-top: 10px;
 }
-.guides .action .item .link span {
-    font-weight: 600;
-    font-size: 1.4rem;
-    color: #0689ff;
-}
 
 .guides .btn {
     margin-top: 50px;
+}
+
+.features {
+    margin-top: 136px;
+    background: #f5fafe;
+    padding: 110px 0;
+}
+
+.features .header .title {
+    font-weight: 600;
+    font-size: 3.5rem;
+    line-height: 1;
+    color: #000339;
+}
+
+.features .header .sub-title {
+    font-weight: 400;
+    font-size: 1.6rem;
+    display: flex;
+    color: #5a6473;
+}
+
+.features .header .row-space-between:last-child {
+    margin-top: 15px;
+}
+
+.features .header .link span {
+    font-size: 1.8rem;
+}
+
+.features .products {
+    margin-top: 68px;
+    display: flex;
+    gap: 30px;
+}
+
+.product {
+    border-radius: 12px;
+    flex: 1;
+    background: #ffffff;
+}
+
+.product .thumb {
+    width: 100%;
+    height: 227px;
+    border-radius: 12px 12px 0 0;
+}
+
+.product .info {
+    margin: 17px 20px 20px 23px;
+}
+
+.product .info .name {
+    font-weight: 600;
+    font-size: 2rem;
+    line-height: 1;
+    color: #000339;
+}
+
+.product .info .sub-name {
+    margin-top: 8px;
+    font-weight: 500;
+    font-size: 1.4rem;
+    line-height: 1;
+    color: #a3a6ab;
+}
+
+.product .info .details {
+    margin-top: 22px;
+}
+
+.product .info .details .item {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.product .info .details .item span {
+    font-weight: 500;
+    font-size: 1.4rem;
+    line-height: 1;
+    color: #444444;
 }
