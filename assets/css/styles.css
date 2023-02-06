@@ -450,6 +450,7 @@ header.header {
 .stats .right .info {
     margin-left: 165px;
     max-width: 310px;
+    position: relative;
 }
 
 .stats .right h2 {
@@ -457,6 +458,18 @@ header.header {
     font-size: 3.5rem;
     line-height: 1.29;
     color: #000339;
+}
+
+.stats .right h2::before {
+    position: absolute;
+    top: -10px;
+    left: 0;
+    content: "";
+    display: block;
+    width: 42px;
+    height: 4px;
+    background: #000339;
+    border-radius: 12px;
 }
 
 .stats .right p {
@@ -493,7 +506,6 @@ header.header {
 /* Subscribe */
 .subscribe {
     margin-top: 50px;
-    height: 360px;
 }
 
 .subscribe .wrapper {
@@ -549,5 +561,74 @@ header.header {
 
 /* Footer */
 footer.footer {
-    height: 1000px;
+    margin-top: 50px;
+    padding: 50px 0;
+}
+
+footer.footer .row-link {
+}
+
+footer.footer .row-link .col {
+    flex: 3;
+}
+
+footer.footer .row-link .col .link {
+    font-weight: 700;
+    font-size: 2rem;
+    color: #1c1c1d;
+}
+
+footer.footer .row-link .col .sub-link {
+    margin-top: 52px;
+}
+
+footer.footer .row-link .col .sub-link li {
+    margin-bottom: 18px;
+}
+footer.footer .row-link .col .sub-link li:last-child {
+    margin-bottom: 0;
+}
+
+footer.footer .row-link .col .sub-link a {
+    font-weight: 400;
+    font-size: 1.6rem;
+    color: #7a7a7e;
+}
+
+footer.footer .row-link .col-touch {
+    flex: 3;
+}
+
+footer.footer .col-touch .text {
+    margin-top: 52px;
+    font-weight: 400;
+    font-size: 1.6rem;
+    color: #7a7a7e;
+}
+
+footer.footer .col-touch .icons {
+    margin-top: 50px;
+    display: flex;
+    gap: 16px;
+}
+
+footer.footer .col-touch .icons .icon {
+    background: #f9f9f9;
+    height: 20px;
+    width: 20px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer.footer .row-logo {
+    margin-top: 80px;
+}
+
+footer.footer .copyright {
+    margin-top: 80px;
+    font-weight: 400;
+    font-size: 1.4rem;
+    color: #c2c2c2;
 }
