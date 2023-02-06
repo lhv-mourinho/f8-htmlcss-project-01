@@ -4,6 +4,12 @@
 
 :root {
     --primary-color: #0f1b4c;
+    --primary-bg-color: #e6f0ff;
+}
+
+html,
+body {
+    scroll-behavior: smooth;
 }
 
 html {
@@ -81,17 +87,24 @@ a {
     overflow: hidden;
 }
 
+.main {
+    position: relative;
+}
 /* Header */
 header.header {
-    height: 100vh;
-    background-color: #e6f0ff;
-    position: relative;
+    padding-top: 30px;
+    background-color: var(--primary-bg-color);
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: -30px;
+    z-index: 2;
 }
 
 .navbar {
     display: flex;
     align-items: center;
-    padding-top: 38px;
+    padding: 10px 0;
 }
 
 .navbar img.logo {
@@ -133,9 +146,19 @@ header.header {
 }
 
 /* Hero */
+.hero {
+    background-color: var(--primary-bg-color);
+    height: calc(100vh - 90px);
+}
+
+.hero .content {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
 .hero .info {
     width: 51%;
-    margin-top: 130px;
 }
 
 .hero .info .sub-title {
@@ -175,8 +198,8 @@ header.header {
 
 /* Clients */
 .clients {
-    padding: 42px 0px;
-    margin-top: 40px;
+    padding: 82px 0px 42px;
+    /* margin-top: 40px; */
 }
 
 .clients .row:nth-child(2) {
@@ -387,8 +410,7 @@ header.header {
 
 /* Stats */
 .stats {
-    margin-top: 50px;
-    padding: 50px 0;
+    padding: 100px 0 50px;
 }
 
 .stats .row-info .left {
@@ -505,7 +527,7 @@ header.header {
 
 /* Subscribe */
 .subscribe {
-    margin-top: 50px;
+    padding-top: 60px;
 }
 
 .subscribe .wrapper {
