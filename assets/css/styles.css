@@ -233,6 +233,9 @@ header.header {
     width: 204px;
     height: 91px;
     background: #ffffff;
+}
+
+.clients .client:hover {
     box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
     border-radius: 12px;
 }
